@@ -4,7 +4,12 @@
 
 * Python 3.8
 
+## Bash
 ```bash
-pip install -r requirements.txt
-python productpage.py 9080
+docker build -t productpage .
+```
+
+## Run
+```bash
+docker run -d --rm -p 8083:9080 productpage
 ```
