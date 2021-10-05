@@ -1,0 +1,10 @@
+services:
+  productpage:
+    build: .
+    image: ghcr.io/l3luescreen/bookinfo-productpage:dev
+    ports:
+      - "8083:9080"
+    environment:
+      DETAILS_HOSTNAME: http://sharp_keldysh:9080
+      RATINGS_HOSTNAME: http://ratings:9080
+      REVIEWS_HOSTNAME: http://reviews-service:9080
