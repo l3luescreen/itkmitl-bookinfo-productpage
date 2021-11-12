@@ -1,7 +1,7 @@
 services:
   productpage:
     build: .
-    image: ghcr.io/l3luescreen/bookinfo-productpage:dev
+    image: ghcr.io/l3luescreen/itkmitl-bookinfo-productpage:dev
     ports:
       - "8083:9080"
     environment:
